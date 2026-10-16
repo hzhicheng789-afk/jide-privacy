@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="记得 1.0.0 本地版隐私政策：了解本地待办数据、可选系统日历权限、数据删除和开发者联系方式。">
+  <meta name="theme-color" content="#2459d3">
+  <meta name="referrer" content="no-referrer">
+  <title>隐私政策 · 记得</title>
+  <style>
+    :root { color-scheme: light; --blue:#2459d3; --ink:#182641; --muted:#53627b; --line:#dce4f0; --paper:#fff; --wash:#f5f8fd; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:88px; }
+    body { margin:0; background:var(--wash); color:var(--ink); font:16px/1.9 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+    a { color:var(--blue); text-underline-offset:4px; overflow-wrap:anywhere; }
+    a:hover { color:#143d9b; }
+    a:focus-visible { outline:3px solid #8eafff; outline-offset:5px; border-radius:3px; }
+    .skip { position:absolute; left:16px; top:-100px; padding:8px 16px; background:white; z-index:5; }
+    .skip:focus { top:10px; }
+    .bar { background:var(--paper); border-bottom:1px solid var(--line); }
+    .bar-inner { max-width:1120px; margin:auto; padding:18px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { font-size:23px; font-weight:750; color:var(--blue); letter-spacing:.08em; text-decoration:none; }
+    .bar-label { color:var(--muted); font-size:14px; }
+    .layout { max-width:1120px; margin:0 auto; padding:52px 32px 72px; display:grid; grid-template-columns:200px minmax(0,1fr); gap:48px; }
+    .toc { position:sticky; top:30px; align-self:start; font-size:14px; }
+    .toc-title { margin:0 0 15px; color:var(--muted); font-weight:650; }
+    .toc ol { margin:0; padding:0; list-style:none; }
+    .toc li { margin:0 0 8px; }
+    .toc a { display:block; padding:6px 0; color:var(--muted); text-decoration:none; }
+    .toc a:hover { color:var(--blue); }
+    .toc .contact { border-top:1px solid var(--line); margin-top:22px; padding-top:18px; }
+    .eyebrow { margin:0 0 10px; color:var(--blue); font-size:13px; font-weight:700; letter-spacing:.12em; }
+    h1 { margin:0; font-size:clamp(32px,5vw,44px); line-height:1.3; letter-spacing:-.03em; }
+    .intro { margin:18px 0; font-size:18px; color:var(--muted); }
+    .meta { display:flex; flex-wrap:wrap; gap:6px 22px; color:var(--muted); font-size:13px; padding-bottom:28px; border-bottom:1px solid var(--line); }
+    .summary { margin:28px 0 36px; padding:22px 25px; background:#eaf1ff; border-left:3px solid var(--blue); border-radius:0 10px 10px 0; }
+    .summary strong { display:block; font-size:17px; margin-bottom:7px; }
+    .summary p { margin:0; font-size:15px; }
+    section { margin:0 0 35px; }
+    h2 { margin:0 0 15px; font-size:22px; line-height:1.5; letter-spacing:-.02em; }
+    h2 .num { font-size:14px; font-weight:650; color:var(--blue); padding-right:13px; }
+    p { margin:0 0 15px; }
+    .permissions { padding:0; margin:18px 0; list-style:none; border:1px solid var(--line); background:white; border-radius:12px; overflow:hidden; }
+    .permissions li { padding:18px 21px; }
+    .permissions li + li { border-top:1px solid var(--line); }
+    .permissions strong { display:block; }
+    code { font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; color:var(--muted); }
+    .permissions p { margin:7px 0 0; font-size:15px; }
+    .contact-card { border:1px solid var(--line); border-radius:12px; padding:19px 23px; background:var(--paper); margin:18px 0; }
+    .contact-card p { margin:2px 0; }
+    .note { color:var(--muted); font-size:14px; }
+    footer { border-top:1px solid var(--line); margin-top:40px; padding-top:24px; font-size:13px; color:var(--muted); }
+    footer p { margin-bottom:10px; }
+    @media (max-width:800px) {
+      .layout { display:block; max-width:740px; padding:32px 24px 48px; }
+      .toc { position:static; margin-bottom:30px; padding-bottom:22px; border-bottom:1px solid var(--line); }
+      .toc ol { display:flex; flex-wrap:wrap; gap:5px 20px; }
+      .toc li { margin:0; }
+      .toc .contact { display:none; }
+      .toc-title { margin-bottom:8px; }
+      .bar-inner { padding:15px 24px; }
+      h2 { font-size:21px; }
+    }
+    @media (max-width:420px) {
+      .layout { padding:27px 20px 40px; }
+      .bar-inner { padding:14px 20px; }
+      .summary { padding:18px; }
+      .meta { display:block; }
+      .meta span { display:block; }
+      .toc a { padding:2px 0; }
+    }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print {
+      body { background:white; color:black; font-size:11pt; }
+      .bar,.toc,.skip { display:none; }
+      .layout { display:block; max-width:none; padding:0; }
+      .summary,.permissions,.contact-card { background:white; }
+      h2 { break-after:avoid; }
+      p,li { orphans:3; widows:3; }
+      a { color:inherit; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="bar"><div class="bar-inner"><a class="brand" href="#main" aria-label="记得隐私政策首页">记得</a><span class="bar-label">隐私与数据说明</span></div></header>
+  <div class="layout">
+    <nav class="toc" aria-label="隐私政策目录">
+      <p class="toc-title">本页内容</p>
+      <ol>
+        <li><a href="#local">01　本地记录</a></li>
+        <li><a href="#network">02　联网与第三方服务</a></li>
+        <li><a href="#permissions">03　系统日历权限</a></li>
+        <li><a href="#calendar">04　日历事件与提醒</a></li>
+        <li><a href="#backup">05　设备备份与同步</a></li>
+        <li><a href="#delete">06　管理与删除数据</a></li>
+        <li><a href="#contact">07　联系与个人信息权益</a></li>
+        <li><a href="#updates">08　未成年人及说明更新</a></li>
+      </ol>
+      <div class="contact"><a href="mailto:1779968024@qq.com">联系开发者 ↗</a></div>
+    </nav>
+    <main id="main">
+      <p class="eyebrow">记得 · 1.0.0 本地版</p>
+      <h1>隐私政策</h1>
+      <p class="intro">关于你的记录如何保存、日历权限如何使用，<br>以及你可以怎样管理自己的数据。</p>
+      <div class="meta"><span>更新日期：2026年10月16日</span><span>生效日期：2026年10月16日</span><span>开发者／运营主体：贺志城</span></div>
+      <aside class="summary" aria-label="隐私摘要"><strong>无需注册，本地记录。</strong><p>当前版本没有账号登录、云后端或跨设备云同步。日历联动由你选择开启。设备备份及系统日历账号的同步行为，与本应用自身的云同步是不同的；请同时查看下方详细说明。</p></aside>
+
+      <section id="local">
+        <h2><span class="num">01</span>隐私说明 · 本地记录</h2>
+        <p>「记得」用于创建、编辑、查看和完成待办，并提供月历及可选的系统日历联动。使用本应用无需注册或登录。</p>
+        <p>待办标题、日期与时间、备注、完成状态，以及提醒设置、日历关联标识和关联状态，保存在应用私有目录，用于恢复你的事项及维护对应的日历事件。</p>
+        <p>为防止保存失败造成丢失，应用还会在私有目录保留上一版数据备份、写入临时文件，以及恢复时发现的损坏副本。因此，从清单删除的内容可能暂留在本地恢复文件中；清除应用数据可一并移除这些本地文件。</p>
+      </section>
+      <section id="network">
+        <h2><span class="num">02</span>联网与第三方服务</h2>
+        <p>当前版本没有云后端和云同步功能，未申请 Internet（网络访问）权限。本应用本身不跨设备上传待办数据。</p>
+        <p>本应用不含广告，也未集成第三方统计 SDK；不会通过本应用向广告或统计服务发送你的待办内容。</p>
+      </section>
+      <section id="permissions">
+        <h2><span class="num">03</span>权限说明 · 系统日历</h2>
+        <p>仅在你主动使用日历联动时，本应用才申请读取日历和写入日历权限。</p>
+        <ul class="permissions">
+          <li><strong>读取日历</strong><code>ohos.permission.READ_CALENDAR</code><p>用于查找本应用专用日历及关联事件。</p></li>
+          <li><strong>写入日历</strong><code>ohos.permission.WRITE_CALENDAR</code><p>用于创建和管理该专用日历，以及新增、更新、删除本应用关联事件和调整提醒。</p></li>
+        </ul>
+        <p>本应用仅管理自己的专用日历及关联事件，不管理其他日历的事项。</p>
+        <p>你可以拒绝授权，或在系统设置中撤回日历权限。拒绝日历权限不影响创建、编辑、保存和查看本地待办；日历联动需要相应权限。</p>
+      </section>
+      <section id="calendar">
+        <h2><span class="num">04</span>日历事件与提醒</h2>
+        <p>开启日历联动并成功写入后，可在设备的系统日历中查看对应事件。关联事件包含事项标题、日期与时间、备注及日历提醒设置。本功能将本应用的事项写入系统日历，不会把其他日历事项导入本应用，也不提供跨设备云同步。</p>
+        <p>删除关联事项时，本应用会请求删除对应的本应用日历事件。标记事项完成后，关联事件保留，并请求清除该事件的提醒。若权限不足或系统操作失败，日历事件或提醒可能仍然保留，请按页面提示重试，或在系统日历中查看并处理。提醒的实际展示还受系统日历与通知设置影响。</p>
+      </section>
+      <section id="backup">
+        <h2><span class="num">05</span>设备备份与账号同步</h2>
+        <p>本应用当前无云同步，但这不代表数据一定不会离开设备。应用私有目录中的本地数据可能受设备备份、恢复或迁移设置影响。</p>
+        <p>写入系统日历的事件也可能受系统日历、日历账号的备份或同步设置影响。本应用本身不跨设备上传这些记录；系统及账号服务是否备份或同步，请以设备设置、账号设置及相应服务的说明为准。</p>
+      </section>
+      <section id="delete">
+        <h2><span class="num">06</span>管理与删除数据</h2>
+        <p>你可以在本应用中编辑或删除待办，并决定是否使用日历联动。你也可以在系统设置中管理日历权限及应用数据。</p>
+        <p>删除事项时，若关联日历行程尚未清理，事项会从清单隐藏；应用会保留该事项的清理记录及内容，用于安全移除对应行程。清理成功后，应用删除该记录。如清理失败，可在主页底部主动授权并重试，本地待办功能不受影响。</p>
+        <p>清除应用数据或卸载应用，会移除应用私有目录中的本地记录，但不等同于删除系统日历中已写入的事件或已有备份。系统日历事件与备份数据，请通过系统日历和相应系统或账号服务管理。</p>
+      </section>
+      <section id="contact">
+        <h2><span class="num">07</span>联系与个人信息权益</h2>
+        <div class="contact-card"><p>开发者／运营主体：贺志城</p><p>客服与隐私问题邮箱：<a href="mailto:1779968024@qq.com">1779968024@qq.com</a></p></div>
+        <p>你可以通过应用清单查阅、更正或删除事项。需要复制事项内容或咨询权限、数据处理时，可以通过邮箱提出请求。本应用没有注册账号，无需办理账号注销；开发者没有可直接查询你的本地日程的云后台，无法远程替你恢复、导出或删除设备内数据。</p>
+        <p>我们会在收到隐私相关请求后15个工作日内受理并处理，必要时仅核实处理请求所需的信息。请勿在邮件中发送密码、验证码、身份证照片或完整私人日程。你主动发送的邮箱地址和问题描述仅用于沟通及处理反馈，邮件也由你所用的邮件服务处理。</p>
+      </section>
+      <section id="updates">
+        <h2><span class="num">08</span>未成年人及说明更新</h2>
+        <p>未成年人请在监护人的指导下使用，避免在备注或反馈中提供不必要的敏感信息。监护人如对信息处理有疑问，可通过上述邮箱联系开发者。</p>
+        <p>如后续版本增加账号、云同步或其他数据处理功能，我们会在启用相关功能前更新本说明，并按适用要求告知你和取得必要授权。当前版本没有这些功能。</p>
+      </section>
+      <footer>
+        <p><strong>本网页的访问说明</strong></p>
+        <p>本页面仅用于公开展示隐私政策，与「记得」应用的本地数据存储相互独立。本页面没有登录、表单、广告或访问统计脚本。若通过 GitHub Pages 访问，GitHub 会为安全目的记录访问者 IP 地址，详见 <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" rel="noreferrer">GitHub Pages 的数据收集说明</a>。浏览本网页不会向托管平台上传你在应用中的日程。</p>
+        <p>适用应用：记得 1.0.0 本地版 · 包名 <code>com.hezhicheng.remindercalendar</code></p>
+        <p><a href="#main">返回页首 ↑</a></p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
